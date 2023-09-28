@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>puzzle</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+    
+    <div class="content">
+        <div class="timer">
+            <span id="minutes">01</span>
+            <span>:</span>
+            <span id="seconds">00</span>
+        </div>
+     
+        <div class="buttons">
+            <button type="button" id="startButton">start game</button>
+            <button type="button" id="checkResult">check result</button>
+            <button type="button" id="new">new game</button>
+        </div>
+        <div class="container">
+            <div id="start" class="image-container">
+                <div class="image-piece first draggablePiece" id="1" value="piece"></div>
+                <div class="image-piece sec draggablePiece" id="2" value="piece"></div>
+                <div class="image-piece third draggablePiece" id="3" value="piece"></div>
+                <div class="image-piece fou draggablePiece" id="4" value="piece"></div>
+                <div class="image-piece fif draggablePiece" id="5" value="piece"></div>
+                <div class="image-piece six draggablePiece" id="6" value="piece"></div>
+                <div class="image-piece sev draggablePiece" id="7" value="piece"></div>
+                <div class="image-piece eig draggablePiece" id="8" value="piece"></div>
+                <div class="image-piece nine draggablePiece" id="9" value="piece"></div>
+            </div>
+            <div id="end" class="image-container">
+                <div class="image-piece target droppableSpace" id="target1"></div>
+                <div class="image-piece target droppableSpace" id="target2"></div>
+                <div class="image-piece target droppableSpace" id="target3"></div>
+                <div class="image-piece target droppableSpace" id="target4"></div>
+                <div class="image-piece target droppableSpace" id="target5"></div>
+                <div class="image-piece target droppableSpace" id="target6"></div>
+                <div class="image-piece target droppableSpace" id="target7"></div>
+                <div class="image-piece target droppableSpace" id="target8"></div>
+                <div class="image-piece target droppableSpace" id="target9"></div>
+            </div>
+        </div>
+
+        <div class="message">
+            <span id="messageTxt"></span>
+            <div class="timer">
+                <span id="minutes">01</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </div>
+            <div class="buttonsMessage">
+                <button type="button" id="close">close</button>
+                <button type="button" id="check" class="checkInMessage">check</button>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <script src="jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
